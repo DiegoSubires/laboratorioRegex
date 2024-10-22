@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comprobación IBAN</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Comprobación IBAN</h1>
+      <div>
+        <p>Introduzca el IBAN:</p>
+        <div>
+          <input id="inputIBAN" class="inputIBAN" type="text" />
+          <button id="validar" class="validar">
+            <img src="./public/search.png" alt="icon" class="icon" />
+          </button>
+        </div>
+        <p id="formacion" class="parrafoRespuesta"></p>
+        <p id="validez" class="parrafoRespuesta"></p>
+        <p id="banco" class="parrafoRespuesta"></p>
+        <p id="sucursal" class="parrafoRespuesta"></p>
+        <p id="digito" class="parrafoRespuesta"></p>
+        <p id="cuenta" class="parrafoRespuesta"></p>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
