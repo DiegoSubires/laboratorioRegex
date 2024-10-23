@@ -9,15 +9,22 @@
   <body>
     <div id="app">
       <h1>Extraer enlaces a imágenes</h1>
-      <div>
-        <p>Pegue el HTML:</p>
-        <div>
-          <textarea name="inputHTML" id="inputHTML"></textarea>
+      <div class="main">
+        <div class="card">
+          <textarea
+            name="inputHTML"
+            id="inputHTML"
+            placeholder="Pegue aquí el HTML..."
+          ></textarea>
 
-          <button id="extraer" class="extraer">EXTRAER IMÁGENES</button>
+          <button id="extraer" class="boton">
+            EXTRAER ENLACES DE IMÁGENES
+          </button>
+          <button id="borrar" class="boton" disabled="true">
+            BORRAR TEXTO
+          </button>
+          <div class="contenedor" id="contenedor"></div>
         </div>
-        <div class="enlaces" id="enlaces"></div>
-        <div class="imagenes" id="imagenes"></div>
       </div>
     </div>
     <script type="module" src="/src/main.ts"></script>
